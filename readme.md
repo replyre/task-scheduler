@@ -10,9 +10,11 @@ This is a full-stack Task Scheduler Application that allows users to create, sch
 
 - A clean and intuitive UI built with React and Ant Design.
 - **Add New Task**: A form to add a new scheduled task, including details like task name, email, and schedule.
+- ![image](https://github.com/user-attachments/assets/dd46c4f6-72e2-454a-9a14-8c3afb822707)
+
 - **Task List**: Displays a list of scheduled tasks with their name, email, status, and next execution time.
+- ![image](https://github.com/user-attachments/assets/84e872ed-174c-4b69-a982-c2266f5c1d26)
 - **Delete Task**: Allows users to delete tasks.
-- **Readable Cron Time**: Cron expressions are displayed in a user-friendly, readable date/time format.
 
 ### **Backend**
 
@@ -52,7 +54,7 @@ This is a full-stack Task Scheduler Application that allows users to create, sch
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/task-scheduler.git
+git clone https://github.com/replyre/task-scheduler.git
 cd task-scheduler
 ```
 
@@ -63,7 +65,7 @@ cd task-scheduler
 #### **Backend**
 
 ```bash
-cd backend
+cd task-scheduler-app
 npm install
 ```
 
@@ -82,7 +84,7 @@ Create a `.env` file in the **backend** directory and add the following:
 
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/taskScheduler
+MONGO_URI=your URI
 EMAIL_SERVICE=gmail
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-email-password
@@ -232,11 +234,3 @@ frontend/
 
 ---
 
-## **Future Enhancements**
-
-- User authentication to restrict task management.
-- Enhanced task logs with execution history and failure reasons.
-- Advanced scheduling options like recurring patterns.
-- Notification system for task failures or completions.
-
----
