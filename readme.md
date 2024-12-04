@@ -10,10 +10,11 @@ This is a full-stack Task Scheduler Application that allows users to create, sch
 
 - A clean and intuitive UI built with React and Ant Design.
 - **Add New Task**: A form to add a new scheduled task, including details like task name, email, and schedule.
-- ![image](https://github.com/user-attachments/assets/dd46c4f6-72e2-454a-9a14-8c3afb822707)
+![image](https://github.com/user-attachments/assets/dd46c4f6-72e2-454a-9a14-8c3afb822707)
 
 - **Task List**: Displays a list of scheduled tasks with their name, email, status, and next execution time.
-- ![image](https://github.com/user-attachments/assets/84e872ed-174c-4b69-a982-c2266f5c1d26)
+![image](https://github.com/user-attachments/assets/e501cf5a-f618-40d7-9039-bc460d82c577)
+
 - **Delete Task**: Allows users to delete tasks.
 
 ### **Backend**
