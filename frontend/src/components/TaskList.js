@@ -66,7 +66,9 @@ const TaskList = () => {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${id}`);
+      await axios.delete(
+        `https://task-scheduler-backend-f162.onrender.com/tasks/${id}`
+      );
       message.success("Task deleted successfully!");
       fetchTasks();
     } catch (error) {
@@ -78,7 +80,14 @@ const TaskList = () => {
     fetchTasks();
   }, []);
 
-  return <Table columns={columns} dataSource={tasks} rowKey="_id" />;
+  return (
+    <Table
+      columns={columns}
+      dataSource={tasks}
+      rowKey="_id"
+      style={{ overflowX: "scroll" }}
+    />
+  );
 };
 
 export default TaskList;

@@ -27,7 +27,7 @@ const App = () => {
         <TaskLogs />
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        Task Scheduler ©2024 Created with Ant Design
+        Task Scheduler ©2024 Created by replyre
       </Footer>
     </Layout>
   );
