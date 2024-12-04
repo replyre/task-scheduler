@@ -42,10 +42,13 @@ const AddTask = ({ refreshTasks }) => {
     const { date, time } = values;
     const cronTime = generateCronTime(date, time);
     try {
-      await axios.post("http://localhost:5000/tasks/add", {
-        ...values,
-        cronTime,
-      });
+      await axios.post(
+        "https://task-scheduler-backend-f162.onrender.com/tasks/add",
+        {
+          ...values,
+          cronTime,
+        }
+      );
       message.success("Task added successfully!");
       refreshTasks();
       handleCancel(); // Close the modal after successful submission

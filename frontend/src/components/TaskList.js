@@ -8,7 +8,9 @@ const TaskList = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/tasks");
+      const response = await axios.get(
+        "https://task-scheduler-backend-f162.onrender.com/tasks"
+      );
       const tasksWithReadableTime = response.data.map((task) => {
         // Convert cron time to human-readable time
         try {

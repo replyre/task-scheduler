@@ -7,7 +7,9 @@ const TaskLogs = () => {
 
   const fetchLogs = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/logs");
+      const response = await axios.get(
+        "https://task-scheduler-backend-f162.onrender.com/logs"
+      );
       setLogs(response.data);
     } catch (error) {
       message.error("Failed to load logs!");
